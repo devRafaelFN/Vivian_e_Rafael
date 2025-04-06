@@ -1,0 +1,168 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150vh;
+    background-color: rgb(88, 84, 84);
+    background-image: url('../img/background.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    color: #333;
+  overflow-x: hidden;
+  }
+  
+  .birthdayCard {
+    position: relative;
+    width: 250px;
+    height: 350px;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transform: perspective(2500px);
+    transition: 4s;
+  }
+  
+  .birthdayCard:hover {
+    transform: perspective(2500px) rotate(5deg);
+    box-shadow: inset 100px 20px 100px rgba(0, 0, 0, 0.15), 0 10px 100px rgba(0, 0, 0, 0.3);
+  }
+  
+  .birthdayCard:hover .cardFront {
+    transform: rotateY(-160deg);
+  }
+  
+  .birthdayCard:hover .front-text {
+    display: none;
+  }
+  
+  .cardFront {
+    position: relative;
+    background-color: rgb(255, 246, 246);
+    width: 250px;
+    height: 350px;
+    overflow: hidden;
+    transform-origin: left;
+    box-shadow: inset 100px 20px 100px rgba(0, 0, 0, 0.13), 30px 0 50px rgba(0, 0, 0, 0.1);
+    transition: 0.4s;
+  }
+  
+  .happy, .toyou {
+    position: relative;
+    font-family: didot;
+    text-align: center;
+    backface-visibility: hidden;
+    font-size: 30px;
+  }
+  
+  .happy {
+    top: 215px;
+  }
+  
+  .toyou {
+    top: 143px;
+  }
+  
+  .bday {
+    position: relative;
+    font-family: arial;
+    font-size: 30px;
+    text-align: center;
+    top: 180px;
+  }
+  
+  .cardInside {
+    position: absolute;
+    background-color: #fff;
+    width: 250px;
+    height: 350px;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    box-shadow: inset 100px 20px 100px rgba(0, 0, 0, 0.2);
+  }
+  
+  .inside-text {
+    position: relative;
+    top: -160px;
+    transform: scale(0.7);
+  }
+  
+  .wishes {
+    position: relative;
+    top: -20px;
+    margin: 25px;
+  }
+  
+  p {
+    font-family: 'Brush Script MT';
+    color: #333;
+  }
+  
+  .name {
+    margin-left: 50px;
+  }
+  
+  .go-to-card {
+    background-color: #cfbb08;
+    text-align: center;
+    margin: 40px 0;
+  }
+  
+  .card-button {
+    background-color: #cfbb08;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 20px;
+    font-size: 18px;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .card-button:hover {
+    background-color: #887b06;
+    transform: scale(1.05);
+  }
+  
+  .fixed-top-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 999;
+  }
+  
+  .handwritten p {
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #5a2a83;
+  }
+  
+  .flower-deco {
+    position: absolute;
+    width: 200px;
+    top: 50px;
+    left: 25px;
+    opacity: 0.8;
+    z-index: 10;
+  }
+  
+  .flower-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 180px;
+    opacity: 0.5;
+    z-index: 1;
+    pointer-events: none;
+  }
+  
+  .front-text {
+    position: relative;
+    z-index: 2;
+  }
+  
