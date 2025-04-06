@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>365 Dias de Amor</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+</head>
+
+<div class="heart-container">
+  <!-- Os corações vão ser adicionados com JS -->
+</div>
+
+<script>
+  const heartContainer = document.querySelector('.heart-container');
+
+  function createHeart() {
+    const heart = document.createElement('span');
+    heart.textContent = '❤️‍🔥';
+    heart.classList.add('falling-heart');
+
+    heart.style.left = Math.random() * 100 + 'vw';
+    heart.style.animationDuration = 2 + Math.random() * 3 + 's';
+    heart.style.fontSize = 20 + Math.random() * 20 + 'px';
+
+    heartContainer.appendChild(heart);
+
+    setTimeout(() => {
+      heart.remove();
+    }, 5000);
+  }
+
+  setInterval(createHeart, 300);
+
+  //config carrossel 
+
+
+  const carouselTrack = document.querySelector('.carousel-track');
+
+carouselTrack.addEventListener('mouseover', () => {
+  carouselTrack.style.animationPlayState = 'paused';
+});
+
+carouselTrack.addEventListener('mouseout', () => {
+  carouselTrack.style.animationPlayState = 'running';
+});
+
+
+
+</script>
+
+
+
+<body>
+
+  <div class="intro">
+    <h1>Bem-vinda ao nosso cantinho! ❤️‍🔥</h1>
+    <p>Hoje comemoramos 365 dias ao seu lado... e que venham muitos mais!</p>
+  </div>
+
+  <h1>365 Dias ao Seu Lado ❤️‍🔥</h1>
+
+  <div class="big-number">
+    <!-- Dígito 3 -->
+    <div class="digit" style="background-image: url('img/3.jpg');">
+      <span class="number">3</span>
+    </div>
+  
+    <!-- Dígito 6 -->
+    <div class="digit" style="background-image: url('img/6.jpg');">
+      <span class="number">6</span>
+    </div>
+  
+    <!-- Dígito 5 -->
+    <div class="digit" style="background-image: url('img/5.jpg');">
+      <span class="number">5</span>
+    </div>
+  </div>
+  
+
+  <div class="carousel">
+    <div class="carousel-track">
+      <img src="img/carrossel/foto1.jpg" alt="1">
+      <img src="img/carrossel/foto18.jpg" alt="18">
+      <img src="img/carrossel/foto3.jpg" alt="3">
+      <img src="img/carrossel/foto7.jpg" alt="7">
+      <img src="img/carrossel/foto5.jpg" alt="5">
+      <img src="img/carrossel/foto12.jpg" alt="12">
+      <img src="img/carrossel/foto8.jpg" alt="8">
+      <img src="img/carrossel/foto25.jpg" alt="25">
+      <img src="img/carrossel/foto9.jpg" alt="9">
+      <img src="img/carrossel/foto11.jpg" alt="11">
+      <img src="img/carrossel/foto13.jpg" alt="13">
+      <img src="img/carrossel/foto2.jpg" alt="2">
+      <img src="img/carrossel/foto14.jpg" alt="14">
+      <img src="img/carrossel/foto20.jpg" alt="20">
+      <img src="img/carrossel/foto30.jpg" alt="30">
+      <img src="img/carrossel/foto15.jpg" alt="15">
+      <img src="img/carrossel/foto10.jpg" alt="10">
+      <img src="img/carrossel/foto16.jpg" alt="16">
+      <img src="img/carrossel/foto17.jpg" alt="17">
+      <img src="img/carrossel/foto4.jpg" alt="4">
+      <img src="img/carrossel/foto19.jpg" alt="19">
+      <img src="img/carrossel/foto21.jpg" alt="21">
+      <img src="img/carrossel/foto23.jpg" alt="23">
+      <img src="img/carrossel/foto24.jpg" alt="24">
+      <img src="img/carrossel/foto22.jpg" alt="22">
+      <img src="img/carrossel/foto26.jpg" alt="26">
+      <img src="img/carrossel/foto6.jpg" alt="6">
+      <img src="img/carrossel/foto28.jpg" alt="28">
+      <img src="img/carrossel/foto29.jpg" alt="29">
+      <img src="img/carrossel/foto27.jpg" alt="27">
+
+    </div>
+  </div>
+
+  <div class="music-player">
+    <h2>🎵 Nossa PLaylist</h2>
+    <audio controls loop>
+      <source src="music/caio-luccas-close-friends.mp3" type="audio/mpeg">
+      Seu navegador não suporta o elemento de áudio.
+    </audio>
+  </div>
+
+  <div class="video-section">
+    <h2>🎥 Nossas Memórias</h2>
+    
+    <div class="video-gallery">
+      <video controls>
+        <source src="videos/video1.mp4" type="video/mp4">
+        Seu navegador não suporta vídeos.
+      </video>
+  
+      <video controls>
+        <source src="videos/video2.mp4" type="video/mp4">
+        Seu navegador não suporta vídeos.
+      </video>
+  
+      <video controls>
+        <source src="videos/video3.mp4" type="video/mp4">
+        Seu navegador não suporta vídeos.
+      </video>
+
+      <video controls>
+        <source src="videos/video4.mp4" type="video/mp4">
+        Seu navegador não suporta vídeos.
+      </video>
+
+      <video controls>
+        <source src="videos/video5.mp4" type="video/mp4">
+        Seu navegador não suporta vídeos.
+      </video>
+
+      <video controls>
+        <source src="videos/video6.mp4" type="video/mp4">
+        Seu navegador não suporta vídeos.
+      </video>
+
+      <video controls>
+        <source src="videos/video7.mp4" type="video/mp4">
+        Seu navegador não suporta vídeos.
+      </video>
+
+      <video controls>
+        <source src="videos/video8.mp4" type="video/mp4">
+        Seu navegador não suporta vídeos.
+      </video>
+
+      <video controls>
+        <source src="videos/video9.mp4" type="video/mp4">
+        Seu navegador não suporta vídeos.
+      </video>
+
+      <video controls>
+        <source src="videos/video10.mp4" type="video/mp4">
+        Seu navegador não suporta vídeos.
+      </video>
+
+      <video controls>
+        <source src="videos/video11.mp4" type="video/mp4">
+        Seu navegador não suporta vídeos.
+      </video>
+
+      <video controls>
+        <source src="videos/video12.mp4" type="video/mp4">
+        Seu navegador não suporta vídeos.
+      </video>
+
+      <video controls>
+        <source src="videos/video13.mp4" type="video/mp4">
+        Seu navegador não suporta vídeos.
+      </video>
+
+      <video controls>
+        <source src="videos/video14.mp4" type="video/mp4">
+        Seu navegador não suporta vídeos.
+      </video>
+
+      
+  </div>
+  
+  <div class="texto">
+
+    <p>Tudo com você é maravilhoso! Obrigado por me escolher pra caminhar ao seu lado. ❤️‍🔥<br>
+      365 dias não são nada perto de tudo o que ainda temos para viver. Feliz 1 ano de namoro!</p>
+      <p1> EU TE AMO!</p1>
+
+  </div>
+
+  
+  <div class="go-to-card">
+    <a href="carta.html" class="card-button">💌 Ler a Cartinha</a>
+  </div>
+  
+
+  <footer>
+    Com amor, por todos os nossos dias juntos. ❤️‍🔥
+  </footer>
+
+</body>
+</html>
